@@ -6,12 +6,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - {{ site.name }}</title>
+    <title>{{ site.name }}</title>
     <link rel="stylesheet" href="{{ site.url }}/styles.css">
 </head>
 <body>
 <header class="gradient-bg">
-    <h1>{{ page.title }}</h1>
+    <h1>{{ site.title }}</h1>
 </header>
 
 <div class="container">
@@ -26,19 +26,21 @@
 
     <main>
         {% for post in site.posts %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
+        
         <div class="card-container">
             <section class="card">
-                <h2>{{ post.title }}</h2>
-                <p>{{ post.excerpt }}</p>
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    <h2>{{ post.title }}</h2>
+                </a>
+                <p>{{ post.excerpt | strip_newlines | truncate: 50, "..." }}</p>
                 <p class="note">{{ post.date | date: "%Y-%m-%d" }}</p>
             </section>
         </div>
-        </a>
         {% endfor %}
         <footer><p>&copy; 2025 SqrtOne 版权所有</p></footer>
     </main>
 </div>
 </body>
 </html>
+
 
