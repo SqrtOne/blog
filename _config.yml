@@ -1,0 +1,13 @@
+name: SqrtOne's Blog
+description: SqrtOne's Blog
+
+url: https://SqrtOne.github.io
+baseurl: /blog
+permalink: /:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
