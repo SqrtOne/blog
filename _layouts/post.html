@@ -30,7 +30,7 @@
             <section class="card">
                 {{ content }}
             </section>
-            <p class="note">{{ page.date | date: "%Y-%m-%d" }}</p>
+            <p class="note">写作时间: {{ page.date | date: "%Y-%m-%d" }}</p>
             {% include giscus.html %}
         </div>
 
