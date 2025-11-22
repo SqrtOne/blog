@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <li><a href="{{ site.url }}">返回首页</a></li>
-                <li><a href="{{ site.url }}{{ site.baseurl }}">Blog</a></li>
+                <li><a href="{{ site.url }}{{ site.baseurl }}">博客</a></li>
                 <li><a href="#" class="active">{{ page.title }}</a></li>
             </ul>
         </nav>
@@ -32,8 +32,8 @@
                 {{ content }}
             </section>
             <p class="note">写作时间: {{ page.date | date: "%Y-%m-%d" }}</p>
-            <p>本页已被浏览 <span id="busuanzi_page_pv">加载中...</span> 次
-                <em>（由 <a href="https://www.busuanzi.cc/" target="_blank">不蒜子®</a> 提供统计）</em></p>
+            <p style="text-align: center"><strong>本页已被浏览 <span id="busuanzi_page_pv">加载中...</span> 次</strong> · 
+                <em>由 <a href="https://www.busuanzi.cc/" target="_blank">不蒜子®</a> 提供统计</em></p>
             {% include giscus.html %}
         </div>
 
