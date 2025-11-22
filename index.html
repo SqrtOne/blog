@@ -23,7 +23,7 @@
 </head>
 <body>
 <header class="gradient-bg">
-    <h1>{{ site.title }}</h1>
+    <h1>{{ site.name }}</h1>
 </header>
 
 <div class="container">
@@ -43,7 +43,7 @@
                 <h2>{{ post.title }}</h2>
                 <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 50, "..." }}</p>
                 <p class="note">写作时间: {{ post.date | date: "%Y-%m-%d" }}</p>
-                <a href="{{ post.url | relative_url }}" class="read-more-btn">阅读全文 →</a>
+                <a href="{{ post.url | relative_url }}" class="read-more-btn" style="color: white">阅读全文 →</a>
             </section>
         </div>
         {% endfor %}
