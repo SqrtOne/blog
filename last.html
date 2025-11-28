@@ -11,10 +11,13 @@
 </head>
 <body>
 {% for post in site.posts limit:1 %}
-<h2>{{ post.title }}</h2>
-<p>{{ post.excerpt | strip_html | strip_newlines | truncate: 50, "..." }}</p>
-<p class="note">写作时间: {{ post.date | date: "%Y-%m-%d" }}</p>
-<a href="{{ post.url | relative_url }}" class="btn" style="color: white" target="_blank">阅读全文 →</a>
+<section class="card">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.description |
+        default: post.excerpt | strip_html | strip_newlines | truncate: 50, '...' }}</p>
+    <p class="note">写作时间: {{ post.date | date: "%Y-%m-%d" }}</p>
+    <a href="{{ post.url | relative_url }}" class="btn" style="color: white">阅读全文 →</a>
+</section>
 {% endfor %}
 </body>
 </html>
