@@ -3,7 +3,7 @@ description: SqrtOne's Blog
 
 url: https://SqrtOne.github.io
 baseurl: /blog
-permalink: /:title/
+permalink: /post/:title/
 
 markdown: kramdown
 kramdown:
@@ -11,3 +11,4 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: 'highlight'
+  math_engine: mathjax
