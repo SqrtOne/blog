@@ -11,41 +11,9 @@
     <title>{{ page.title }} - {{ site.name }}</title>
     <link rel="stylesheet" href="{{ site.url }}/styles.css">
     <style>
-        /* Rouge代码块容器 */
-        .highlight {
-            background: #2d2d2d; /* 深色背景 */
-            color: #ccc;
-            padding: 1.2rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            overflow-x: auto;
-        }
-
-        /* 代码行样式 */
-        .highlight pre {
-            line-height: 1.5;
-            font-family: 'Consolas', 'Monaco', monospace;
-            font-size: 0.95rem;
-        }
-
-        /* Rouge语法高亮细节（适配Monokai主题） */
-        .highlight .hll { background-color: #49483e; }
-        .highlight .err { color: #960050; background-color: #1e0010; }
-        .highlight .k { color: #66d9ef; } /* 关键字 */
-        .highlight .c { color: #75715e; } /* 注释 */
-        .highlight .n { color: #f8f8f2; } /* 变量 */
-        .highlight .o { color: #f92672; } /* 操作符 */
-        .highlight .p { color: #f8f8f2; } /* 标点 */
-        .highlight .m { color: #ae81ff; } /* 数字 */
-        .highlight . { color: #e6db74; } /* 字符串 */
-        .highlight .nc { color: #a6e22e; } /* 类名 */
-        .highlight .nf { color: #a6e22e; } /* 函数名 */
-
-        /* Markdown引用块 */
         blockquote {
-            border-left: 4px solid #66d9ef; /* 与代码高亮配色呼应 */
-            padding: 1rem 1.5rem;
-            margin: 1.5rem 0;
+            border-left: 4px solid #8ec7fc;
+            padding: 0.1rem 1.5rem;
             background: #f0f8fb;
             border-radius: 0 6px 6px 0;
             color: #333;
@@ -78,7 +46,6 @@
                 <em>由 <a href="https://www.busuanzi.cc/" target="_blank">不蒜子®</a> 提供统计</em></p>
             {% include giscus.html %}
         </div>
-
         <footer><p>&copy; 2025 SqrtOne 版权所有</p></footer>
     </main>
 </div>
