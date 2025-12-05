@@ -10,6 +10,7 @@
         default: post.excerpt | strip_html | strip_newlines | truncate: 50, '...' }}">
     <title>{{ page.title }} - {{ site.name }}</title>
     <link rel="stylesheet" href="{{ site.url }}/styles.css">
+    <link rel="stylesheet" href="{{ site.url }}/{{ site.baseurl }}/post.css">
     <style>
         blockquote {
             border-left: 4px solid #8ec7fc;
